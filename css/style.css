@@ -1,0 +1,118 @@
+
+/* Обнуление стилей */
+*,
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,body {
+    height: 100%;
+}
+
+/* По умолчанию 16 рх */
+html {
+    font-size: 16px;
+}
+
+body {
+  line-height: 1;
+}
+ 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* .........lesson6.......... */
+
+.block {
+    font-size: 30px ;
+ padding: 30px;
+ color: gray;
+
+    /* Определяет цвет фона элемента */
+    background-color: goldenrod;
+
+    /* Устанавливает фоновое изображение для элемента 
+    либо задает гредиентную заливку
+    */
+    background-image: url("../img/img.jpg");
+
+ 
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.2862394957983193) 67%, rgba(255,0,0,1) 100%);
+
+/* Определяет как будет повторяться фоновое изображение */
+background-position: 0 0;
+
+} 
+
+
+.block2 {
+    color: white;
+    font-size: 30px ;
+ padding: 30px;
+ background-image: url("../img/img.jpg");
+ /* Определяет как будет повторяться фоновое изображение */
+background-repeat: no-repeat;
+/* Задает начальное положение фонового изображени я, где первое значение 
+(проценты, рх, слово) определяет расположение по горизонтали, второе вертикали.*/
+/* background-position: 10px 100px; */
+background-position: center left;
+
+/* Маштабирует фоновое изображение согласно заданым размерам
+в цифрах, где первое значение (проценты,рх )определяет ширину, 
+второе высоту. Либо специальное значение.
+*/
+background-size: auto auto;
+
+}
+
+.block3 {
+    background-color: green;
+font-size: 30px ;
+
+ padding: 30px;
+    /* Универсально свойство */
+    background: green url(../img/Логотип_АТБ.svg.png) 0 0 no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+ul li {
+    margin: 0px 0px 15px 0px;
+    background: url(../img/images.jpg) 0 0 / 90px no-repeat;
+    padding: 10px 0px 0px 100px;
+    font-size: 30px;
+    min-height: 50px;
+}
